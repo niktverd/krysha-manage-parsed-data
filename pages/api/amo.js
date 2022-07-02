@@ -14,6 +14,7 @@ export default async function handler(req, res) {
 
     client.environment.set('auth.redirect_uri', 'https://krysha-manage-parsed-data.herokuapp.com/api/amo');
 
+    const authUrl = client.auth.getUrl();
     console.log('Перейдите по адресу для завершения авторизации', authUrl);
 
     try {
