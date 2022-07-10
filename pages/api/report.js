@@ -1,5 +1,3 @@
-import { amoPush } from '../../src/functions/amoPush';
-
 const { collection, getDocs } = require('firebase/firestore/lite');
 
 const db = require('../../firebase.ts');
