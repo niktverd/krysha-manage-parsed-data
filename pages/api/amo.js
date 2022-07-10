@@ -10,6 +10,7 @@ export default async function handler(req, res) {
     const docs = await getDocs(q);
 
     const items = docs.docs.map((d) => ({...d.data()}));
+    res.json(items);
 
     console.log('items.length', items.length);
 
