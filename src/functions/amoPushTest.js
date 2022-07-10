@@ -1,0 +1,87 @@
+const {amoPush} = require('./amoPush');
+
+const items = [{
+    hydrate_full_hasAutoRe: false,
+    hydrate_full_services: [{ name: 'hot' }, { name: 'up' }],
+    hydrated: 'completed',
+    hydrate_full_category: {
+        label: 'Продажа квартир',
+        name: 'sell.flat',
+        isDisabled: false,
+        id: 1
+    },
+    amoPushed: false,
+    city: 'Нур-Султан (Астана)',
+    priceString: '60 000 000 〒',
+    type: '4-комнатная квартира',
+    hydrate_full_fullAddress: 'Нур-Султан (Астана), Алматы р-н, Нажимеденова 10',
+    hydrate_sectionAlias: 'prodazha',
+    areaString: '165.7 м²',
+    hydrate_full_priceM2: 362100,
+    fullAddress: 'Алматы р-н, Нажимеденова 10',
+    rooms: 4,
+    hydrate_full_createdAt: '2014-10-06',
+    hydrate_full_isAgent: false,
+    phones: ['87010999931'],
+    hydrate_title: '4-комнатная квартира, 165.7 м², 18/22 этаж',
+    parsedAt: { seconds: 1656699584, nanoseconds: 867000000 },
+    addressCross: '',
+    id: '-a-show-13632867',
+    date: '1 июл.',
+    area: 165.7,
+    hydrate_full_owner: {
+        isOwner: true,
+        title: 'Хозяин',
+        isCurrentUser: false,
+        isComplex: false,
+        isPro: false,
+        label: { name: 'owner', title: 'Хозяин недвижимости', color: 'yellow' },
+        isChecked: false,
+        isBuilder: false
+    },
+    hydrate_full_color: null,
+    floorString: '18/22 этаж',
+    hydrate_full_price: '60&nbsp;000&nbsp;000&nbsp;<span class="currency-sign offer__currency">〒</span>',
+    floorCurrent: 18,
+    hydrate_full_title: '4-комнатная квартира, 165.7 м², 18/22 этаж',
+    hydrate_categoryAlias: 'kvartiry',
+    hydrate_full_hasPackages: false,
+    addressDistrict: 'Алматы р-н',
+    hydrate_full_addedAt: '2022-07-01',
+    hydrate_userType: 'owner',
+    hydrate_full_address: 'Нажимеденова 10',
+    hydrate_rooms: 4,
+    hydrationAttempts: 1,
+    price: 60000000,
+    hydrate_full_titleWithPrice: '4-комнатная квартира, 165.7 м², 18/22 этаж за 60&nbsp;млн&nbsp;<span class="currency-sign offer__currency">〒</span>',
+    hydrate_full_description: 'жил. комплекс Гранд Астана, монолитный дом, 2009 г.п., потолки 3м., санузел 2 с/у и более, телефон: отдельный, интернет оптика, частично меблирована, Неподалёку находятся архитектурные шедевры столицы: АкОрда, Дворец мира и согласия (ПИРАМИДА), Музей, Президентский Парк с живописной рекой…',
+
+    hydrate_address: {
+        house_num: '10',
+        country: 'Kazahstan',
+        street: 'Nazhimedenova',
+        city: 'Nur-Sultan_(Astana)',
+        district: 'Almaty_r-n'
+    },
+    hydrate_map: {
+        type: 'yandex#map',
+        lat: 51.119904995582,
+        lon: 71.46345466326,
+        zoom: 14
+    },
+    address: 'Нажимеденова 10',
+    owner: 'Хозяин недвижимости',
+    link: '/a/show/13632867',
+    hydrate_price: 60000000,
+    floorTotal: 22,
+    hydrate_full_daysInLive: 1,
+    roomsString: '4',
+    hydrate_addressTitle: 'Нажимеденова 10',
+    hydrate_square: 165.7,
+    views: '17070',
+    hydrate_full_hasAutoUp: true,
+    param: '4-комнатная квартира, 165.7 м², 18/22 этаж',
+    hydrate_ownerName: 'TLC 105'
+}];
+
+amoPush(items);
