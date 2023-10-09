@@ -6,7 +6,14 @@ const db = require('../../firebase.ts');
 
 export default async function handler(req, res) {
     const col = collection(db, 'entries');
-    const q = query(col, where(`amoPushed`, '==', false), where(`city`, '==', 'Нур-Султан (Астана)'));
+    const q = query(
+        col,
+        where(`amoPushed`, '==', false), 
+        where(`hydrated`, '==', 'completed'),
+        where(`city`, '==', 'Нур-Султан (Астана)'),
+        // where(`date`, '==', '12 июл.'),
+    );
+
     const docs = await getDocs(q);
 
     const items = docs.docs.map((d) => ({...d.data()}));
